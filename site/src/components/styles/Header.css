@@ -11,6 +11,7 @@
     background: rgb(101,117,157);
     background: linear-gradient(59deg, rgba(101,117,157,1) 0%, rgba(225,152,134,1) 100%);
 }
+
 .btnGta {
     width: 100%;
     height: 100%;
@@ -18,7 +19,7 @@
     border: none;
     color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+    font-size: clamp(15px,1rem,18px);
     letter-spacing: 2px;
 }
 .logoHeader {
@@ -95,7 +96,20 @@
 #menuSuporte {
     display: block;
 }
-
+.colItemsMenu {
+    margin-right: 60px;
+}
+.drop-menu {
+    display: flex;
+}
+.colMenuHamb {
+    display: none;
+}
+.colLogo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 @media (max-width: 1098px) {
     #menuMais {
         display: block;
@@ -105,5 +119,20 @@
     }
     #menuSuporte {
         display: none;
+    }
+}
+
+@media (max-width: 1030px) {
+    .drop-menu {
+        display: none;
+    }
+    .colMenuHamb {
+        display: flex;
+    }
+    .colLogo {
+        justify-content: center;
+    }
+    .row_btnHeader {
+        padding: 10px 10px;
     }
 }
