@@ -1,0 +1,109 @@
+.contHeader {
+    height: 140px;
+    background-color: #020202;
+    padding: 0;
+}
+.row_btnGta {
+    padding: 0;
+}
+.colBtn {
+    height: 60px;
+    background: rgb(101,117,157);
+    background: linear-gradient(59deg, rgba(101,117,157,1) 0%, rgba(225,152,134,1) 100%);
+}
+.btnGta {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.logoHeader {
+    width: 30px;
+    height: 30px;
+}
+.row_btnHeader {
+    height: 55%;
+    padding: 10px 60px;
+}
+.listaMenu {
+    display: flex;
+    list-style: none;
+}
+.itemMenu {
+    margin: 0px 5px;
+    padding: 0 10px;
+    color: white;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    height: 100%;
+    padding-bottom: 28px;
+    border-bottom: solid 2px black;
+    transition: ease 0.3s;
+}
+.itemMenu:hover {
+    border-color: white;
+    transition: ease 0.3s;
+}
+.circuloUser {
+    background-color: #272727;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkLauncher {
+    background-color: #fcaf17;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: 'Noto Sans', sans-serif;
+    white-space: nowrap;
+    transition: ease 1s;
+    font-size: 15px;
+}
+.linkLauncher:hover {
+    background-color: #da9202;
+    transition: ease 1s;
+}
+
+.iconMenu_LinkAcess{
+    position: relative;
+    top: 4px;
+    left: 4px;
+}
+
+.iconMenuExpand{
+    position: relative;
+    top: 4px;
+}
+
+#menuMais {
+    display: none;
+}
+#menuLoja {
+    display: block;
+}
+#menuSuporte {
+    display: block;
+}
+
+@media (max-width: 1098px) {
+    #menuMais {
+        display: block;
+    }
+    #menuLoja {
+        display: none;
+    }
+    #menuSuporte {
+        display: none;
+    }
+}
